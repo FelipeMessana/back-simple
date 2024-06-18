@@ -1,0 +1,55 @@
+@login = http://localhost:3000/user/login
+
+@singup = http://localhost:3000/user/usersp
+
+@getData = http://localhost:3000/user/getData
+
+@addMateria = http://localhost:3000/user/addMateria
+
+@cursar = http://localhost:3000/user/cursar
+
+@materiaId = http://localhost:3000/user/getMateriaById/3636
+POST {{login}}
+Content-Type: application/json
+
+{
+    "dni": "3636",
+    "password":"1234"
+}
+
+###
+POST {{singup}}
+Content-Type: application/json
+
+{
+    "nombre": "jose",
+    "dni": "3636",
+    "correo": "jose23@gmail.com",
+    "password": "1234"
+}
+
+###
+get {{getData}}
+mani : eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNjM2IiwiaWF0IjoxNzE4NjUwMTExLCJleHAiOjE3MTg2NTE5MTF9.Kp76CCuCz36VvNyVkGyE98iJxZnOezm11iFA-M2TBcc
+
+###
+POST {{addMateria}}
+Content-Type: application/json
+mani: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNjM2IiwiaWF0IjoxNzE4NjUwMTExLCJleHAiOjE3MTg2NTE5MTF9.Kp76CCuCz36VvNyVkGyE98iJxZnOezm11iFA-M2TBcc
+
+{
+  "nombre_materia": "ingles"
+}
+
+###
+POST {{cursar}}
+Content-Type: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNjM2IiwiaWF0IjoxNzE4NjUwMTExLCJleHAiOjE3MTg2NTE5MTF9.Kp76CCuCz36VvNyVkGyE98iJxZnOezm11iFA-M2TBcc
+
+{
+  "dni": "3636",
+  "idMateria": 10
+}
+
+###
+GET {{materiaId}}
+mani: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiIzNjM2IiwiaWF0IjoxNzE4NjUwMTExLCJleHAiOjE3MTg2NTE5MTF9.Kp76CCuCz36VvNyVkGyE98iJxZnOezm11iFA-M2TBcc

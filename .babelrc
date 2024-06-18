@@ -1,0 +1,4 @@
+//configuración de babel para la transpilación de codigo
+{
+  "presets": ["@babel/preset-env"]
+}
